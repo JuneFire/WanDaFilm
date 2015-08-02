@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.0"
+    xmlns="http://java.sun.com/xml/ns/javaee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>LoginServlet</servlet-name>
+    <servlet-class>com.servlet.LoginServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>FilmServlet</servlet-name>
+    <servlet-class>com.servlet.FilmServlet</servlet-class>
+  </servlet>
+   <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AdminManagServlet</servlet-name>
+    <servlet-class>com.servlet.AdminManagServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>FilmManagServlet</servlet-name>
+    <servlet-class>com.servlet.FilmManagServlet</servlet-class>
+  </servlet>
+  
+  
+
+
+  <servlet-mapping>
+    <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/LoginServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>FilmServlet</servlet-name>
+    <url-pattern>/Admin/FilmServlet</url-pattern>
+  </servlet-mapping>
+   <servlet-mapping>
+    <servlet-name>AdminManagServlet</servlet-name>
+    <url-pattern>/adminmanagservlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>FilmManagServlet</servlet-name>
+    <url-pattern>/FilmManagServlet</url-pattern>
+  </servlet-mapping>
+
+
+</web-app>
